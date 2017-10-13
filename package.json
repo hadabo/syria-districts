@@ -1,0 +1,27 @@
+{
+  "name": "syria-districts",
+  "version": "1.0.0",
+  "description": "Get random districts names of Syria",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadabo/syria-districts.git"
+  },
+  "keywords": [
+    "random",
+    "syria",
+    "districts"
+  ],
+  "author": "Abdul-hadi Hawari <hadabo@gmail.com> (http://hadabo.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hadabo/syria-districts/issues"
+  },
+  "homepage": "https://github.com/hadabo/syria-districts#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
