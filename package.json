@@ -1,6 +1,6 @@
 {
   "name": "syria-districts",
-  "version": "1.1.0-beta.0",
+  "version": "1.1.0-beta.1",
   "description": "Get random districts names of Syria",
   "main": "src/index.js",
   "scripts": {
