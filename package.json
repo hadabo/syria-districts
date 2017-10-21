@@ -1,14 +1,16 @@
 {
   "name": "syria-districts",
-  "version": "1.2.0",
+  "version": "0.0.0-semantically-released",
   "description": "Get random districts names of Syria",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hadabo/syria-districts.git"
+    "url": "https://github.com/hadabo/syria-districts.git"
   },
   "keywords": [
     "random",
@@ -26,6 +28,12 @@
   },
   "devDependencies": {
     "chai": "4.1.2",
-    "mocha": "4.0.1"
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "mocha": "4.0.1",
+    "semantic-release": "^8.2.0"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
