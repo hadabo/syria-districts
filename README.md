@@ -21,4 +21,4 @@ This library was developed by [Abdul-hadi Hawari](twitter.com/@hadabo) as a PoC 
 
 
 
-`inspired from [starwars-names](https://www.npmjs.com/package/starwars-names) by Kent C. Dodds as part of an egghead.io series called "How to Write a JavaScript Library."`
+###### inspired from [starwars-names](https://www.npmjs.com/package/starwars-names) by Kent C. Dodds as part of an egghead.io series called "How to Write a JavaScript Library."
