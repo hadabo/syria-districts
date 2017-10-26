@@ -4,6 +4,7 @@
   "description": "Get random districts names of Syria",
   "main": "src/index.js",
   "scripts": {
+    "precommit": "npm test",
     "commit": "git-cz",
     "lint": "eslint --fix src/*.js",
     "test": "mocha src/index.test.js",
@@ -37,6 +38,7 @@
     "eslint-plugin-node": "5.2.1",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1",
+    "husky": "0.14.3",
     "mocha": "4.0.1",
     "semantic-release": "8.2.2"
   },
