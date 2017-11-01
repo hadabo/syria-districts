@@ -4,6 +4,7 @@
 [![Semantic release][semantic-release]][semantic]
 [![Syria districts package][npm-dm]][syria-districts]
 [![Commitizen friendly][commitizen-badge]][commitizen]
+[![codecov][codecov-badge]][codecov]
 
 
 
@@ -41,3 +42,5 @@ This library was developed by [Abdul-hadi Hawari](https://twitter.com/@hadabo) a
 [syria-districts]: https://www.npmjs.com/package/syria-districts
 [commitizen-badge]:https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
 [commitizen]: http://commitizen.github.io/cz-cli/
+[codecov-badge]: https://img.shields.io/codecov/c/github/hadabo/syria-districts/master.svg?style=flat-square
+[codecov]: https://codecov.io/gh/hadabo/syria-districts
