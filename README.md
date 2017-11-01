@@ -3,22 +3,25 @@
 [![MIT License][license-badge]][LICENSE]
 [![Semantic release][semantic-release]][semantic]
 [![Syria districts package][npm-dm]][syria-districts]
+[![Commitizen friendly][commitizen-badge]][commitizen]
 
-Get random names of Syria districts.
+
+
+Get all the districts names of Syria or a random one.
 
 ## Installation
 
 This package is distributed via npm:
 ```bash
-npm install syria-districts
+npm install --save syria-districts
 ```
 
 ## Usage
 ```javascript
-var names = require('syria-districts');
-var allNames = names.all;
-var randomName = names.random();
-var threeRandomNames = names.random(3);
+var syriaDistricts = require('syria-districts');
+var allDistricts = syriaDistricts.all;
+var randomDistrict = syriaDistricts.random();
+var randomDistricts = syriaDistricts.random(3);
 ```
 
 ## Other
@@ -36,3 +39,5 @@ This library was developed by [Abdul-hadi Hawari](https://twitter.com/@hadabo) a
 [semantic]: https://www.npmjs.com/package/semantic-release
 [npm-dm]: https://img.shields.io/npm/dm/syria-districts.svg?style=flat-square
 [syria-districts]: https://www.npmjs.com/package/syria-districts
+[commitizen-badge]:https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
+[commitizen]: http://commitizen.github.io/cz-cli/
