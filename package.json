@@ -1,15 +1,17 @@
 {
   "name": "syria-districts",
   "version": "0.0.0-semantically-released",
-  "description": "Get random districts names of Syria",
-  "main": "src/index.js",
+  "description": "Get all the districts names of Syria or a random one.",
+  "main": "dist/index.js",
   "scripts": {
     "precommit": "npm run test && npm run check-coverage",
-    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "check-coverage": "babel-istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "commit": "git-cz",
+    "git-cz": "git-cz",
     "lint": "eslint --fix src/*.js",
-    "test": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "test": "babel-istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "prebuild": "rimraf dist",
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -21,6 +23,10 @@
     "syria",
     "districts"
   ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "author": "Abdul-hadi Hawari <hadabo@gmail.com> (http://hadabo.com/)",
   "license": "MIT",
   "bugs": {
@@ -31,6 +37,10 @@
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-istanbul": "0.12.2",
+    "babel-preset-env": "1.6.1",
+    "babel-register": "6.26.0",
     "chai": "4.1.2",
     "codecov.io": "0.1.6",
     "commitizen": "2.9.6",
@@ -42,13 +52,18 @@
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1",
     "husky": "0.14.3",
-    "istanbul": "0.4.5",
     "mocha": "4.0.1",
+    "rimraf": "2.6.2",
     "semantic-release": "8.2.2"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   }
 }
