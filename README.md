@@ -26,13 +26,28 @@ npm install --save syria-districts
 import syriaDistricts from 'syria-districts';
 
 const allDistricts = syriaDistricts.all;
-// [ 'Damascus',  'Rif Dimashq',  'Homs',  'Aleppo',  'Hama',  'Idlib',  'Raqqa',  'Al-Hasakah',  'Daraa',  'Tartus',  'Deir ez-Zor',  'Quneitra',  'Al-Suwayda',  'Latakia' ]
+// [ 'Damascus',  
+//   'Rif Dimashq',  
+//   'Homs',  
+//   'Aleppo',  
+//   'Hama',  
+//   'Idlib',  
+//   'Raqqa',  
+//   'Al-Hasakah',  
+//   'Daraa',  
+//   'Tartus',  
+//   'Deir ez-Zor',  
+//   'Quneitra',  
+//   'Al-Suwayda',  
+//   'Latakia' ]
 
 const randomDistrict = syriaDistricts.random();
 // Damascus
 
 const randomDistricts = syriaDistricts.random(3);
-// [ 'Al-Hasakah', 'Daraa', 'Raqqa' ]
+// [ 'Al-Hasakah', 
+//   'Daraa', 
+//   'Raqqa' ]
 ```
 
 ## Other
