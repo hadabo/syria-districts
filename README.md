@@ -11,21 +11,28 @@
 
 
 
-Get all the districts names of Syria or a random one.
+Get all the districts names of Syria or a random one. a PoC to learn [semantic-release](https://www.npmjs.com/package/semantic-release)
 
 ## Installation
 
 This package is distributed via npm:
+
 ```bash
 npm install --save syria-districts
 ```
 
 ## Usage
 ```javascript
-var syriaDistricts = require('syria-districts');
-var allDistricts = syriaDistricts.all;
-var randomDistrict = syriaDistricts.random();
-var randomDistricts = syriaDistricts.random(3);
+import syriaDistricts from 'syria-districts';
+
+const allDistricts = syriaDistricts.all;
+// [ 'Damascus',  'Rif Dimashq',  'Homs',  'Aleppo',  'Hama',  'Idlib',  'Raqqa',  'Al-Hasakah',  'Daraa',  'Tartus',  'Deir ez-Zor',  'Quneitra',  'Al-Suwayda',  'Latakia' ]
+
+const randomDistrict = syriaDistricts.random();
+// Damascus
+
+const randomDistricts = syriaDistricts.random(3);
+// [ 'Al-Hasakah', 'Daraa', 'Raqqa' ]
 ```
 
 ## Other
