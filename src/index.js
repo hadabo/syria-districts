@@ -1,5 +1,5 @@
-import uniqueRandomArray from 'unique-random-array'
-import syriaDistrictsNames from './syria-districts.json'
+const uniqueRandomArray = require('unique-random-array')
+const syriaDistrictsNames = require('./syria-districts.json')
 
 const getRandomItem = uniqueRandomArray(syriaDistrictsNames)
 

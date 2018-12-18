@@ -4,12 +4,11 @@
   "description": "Get all the districts names of Syria or a random one.",
   "main": "dist/index.js",
   "scripts": {
-    "precommit": "npm run test && npm run check-coverage",
     "check-coverage": "babel-istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "git-cz": "git-cz",
     "lint": "eslint --fix src/*.js",
-    "test": "babel-istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "test": "babel-istanbul cover -x *.test.js node_modules/mocha/bin/_mocha -- -R spec src/index.test.js",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
@@ -41,9 +40,10 @@
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
+    "babel-core": "^6.26.3",
     "babel-istanbul": "0.12.2",
-    "babel-loader": "8.0.4",
-    "babel-preset-env": "1.7.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "babel-register": "6.26.0",
     "chai": "4.2.0",
     "codecov.io": "0.1.6",
@@ -55,12 +55,12 @@
     "eslint-plugin-node": "8.0.0",
     "eslint-plugin-promise": "4.0.1",
     "eslint-plugin-standard": "4.0.0",
-    "husky": "1.2.0",
+    "husky": "1.2.1",
     "mocha": "5.2.0",
     "npm-run-all": "4.1.5",
     "rimraf": "2.6.2",
-    "semantic-release": "15.12.4",
-    "webpack": "4.27.1",
+    "semantic-release": "15.13.1",
+    "webpack": "^4.27.1",
     "webpack-cli": "3.1.2"
   },
   "config": {
@@ -72,5 +72,10 @@
     "presets": [
       "env"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test && npm run check-coverage"
+    }
   }
 }
